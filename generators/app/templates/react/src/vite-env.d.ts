@@ -1,6 +1,4 @@
 /// <reference types="@pptb/types" />
-/// <reference types="svelte" />
-/// <reference types="vite/client" />
 
 declare global {
     interface Window {

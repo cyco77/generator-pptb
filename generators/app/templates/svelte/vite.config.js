@@ -1,13 +1,12 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import type { Plugin } from 'vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 /**
  * Plugin to fix HTML for PPTB compatibility
  * - Removes type="module" and crossorigin attributes since we're using IIFE format
  * - Moves script tags from head to end of body so DOM is ready when IIFE executes
  */
-function fixHtmlForPPTB(): Plugin {
+function fixHtmlForPPTB() {
     return {
         name: 'fix-html-for-pptb',
         enforce: 'post',
@@ -22,7 +21,7 @@ function fixHtmlForPPTB(): Plugin {
             // Move script tags from head to end of body
             // IIFE executes immediately, so DOM must be ready
             const scriptRegex = /(<script[^>]*src="[^"]*"[^>]*><\/script>)/g;
-            const scripts: string[] = [];
+            const scripts = [];
             
             // Extract all script tags
             html = html.replace(scriptRegex, (match) => {
@@ -43,7 +42,7 @@ function fixHtmlForPPTB(): Plugin {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [react(), fixHtmlForPPTB()],
+    plugins: [svelte(), fixHtmlForPPTB()],
     base: './',
     build: {
         outDir: 'dist',
