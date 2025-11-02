@@ -93,7 +93,7 @@ async function refreshConnection() {
  * Subscribe to platform events
  */
 function subscribeToEvents() {
-    toolbox.events.on((event, payload) => {
+    toolbox.events.on((_event, payload) => {
         log(`Event: ${payload.event}`, 'info');
 
         switch (payload.event) {
@@ -517,7 +517,7 @@ async function getContactMetadata() {
         const output = document.getElementById('metadata-output');
         if (output) output.textContent = 'Retrieving metadata...\n';
 
-        const metadata = await dataverse.getEntityMetadata('contact');
+        const metadata = await dataverse.getEntityMetadata('contact', true);
 
         if (output) {
             output.textContent = 'Contact Entity Metadata:\n\n';

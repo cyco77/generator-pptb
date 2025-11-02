@@ -143,7 +143,7 @@
         try {
             metadataOutput = 'Retrieving metadata...\n';
 
-            const metadata = await window.dataverseAPI.getEntityMetadata('account');
+            const metadata = await window.dataverseAPI.getEntityMetadata('account', true);
 
             let output = 'Account Entity Metadata:\n\n';
             output += `Logical Name: ${metadata.LogicalName}\n`;
