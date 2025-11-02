@@ -45,8 +45,8 @@ export default {
 
         // Copy vite.config.ts
         generator.fs.copy(
-            generator.templatePath('svelte/vite.config.ts'),
-            generator.destinationPath('vite.config.ts')
+            generator.templatePath('svelte/vite.config.js'),
+            generator.destinationPath('vite.config.js')
         );
 
         // Copy svelte.config.js
@@ -95,8 +95,39 @@ export default {
         );
 
         generator.fs.copy(
-            generator.templatePath('svelte/src/styles.css'),
-            generator.destinationPath('src/styles.css')
+            generator.templatePath('svelte/src/app.css'),
+            generator.destinationPath('src/app.css')
+        );
+
+        generator.fs.copy(
+            generator.templatePath('svelte/src/vite-env.d.ts'),
+            generator.destinationPath('src/vite-env.d.ts')
+        );
+
+        // Copy lib components
+        generator.fs.copy(
+            generator.templatePath('svelte/src/lib/ConnectionStatus.svelte'),
+            generator.destinationPath('src/lib/ConnectionStatus.svelte')
+        );
+
+        generator.fs.copy(
+            generator.templatePath('svelte/src/lib/DataverseAPIDemo.svelte'),
+            generator.destinationPath('src/lib/DataverseAPIDemo.svelte')
+        );
+
+        generator.fs.copy(
+            generator.templatePath('svelte/src/lib/EventLog.svelte'),
+            generator.destinationPath('src/lib/EventLog.svelte')
+        );
+
+        generator.fs.copy(
+            generator.templatePath('svelte/src/lib/ToolboxAPIDemo.svelte'),
+            generator.destinationPath('src/lib/ToolboxAPIDemo.svelte')
+        );
+
+        generator.fs.copy(
+            generator.templatePath('svelte/src/lib/stores.ts'),
+            generator.destinationPath('src/lib/stores.ts')
         );
     },
     
