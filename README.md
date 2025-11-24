@@ -191,7 +191,7 @@ After generating your tool:
    npm run dev
    ```
 
-3. **Test in PPTB:**
+3. **Test in PPTB*:**
    - Build your tool
    - Run the PPTB Desktop App
    - Go to settings, select the Show Debug Menu option and select Save
@@ -205,13 +205,15 @@ After generating your tool:
    npm run build
    ```
 
-5. **Finalize package and publish:**
+5. **Finalize package and publish*:**
    -Run finalize-package to shrinkwrap
    ```bash
    npm run finalize-package
    ```
    This creates an `npm-shrinkwrap.json` file that locks dependencies for security and ensures consistent installations.
    - Deploy to npm
+
+***For more information on development, testing and releasing your tool see the [Tool Development Guide](https://github.com/PowerPlatformToolBox/desktop-app/blob/main/docs/TOOLBOX_DEV.md)**
 
 ## PPTB API
 
@@ -238,6 +240,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Links
 
+- [Tool Development Guide](https://github.com/PowerPlatformToolBox/desktop-app/blob/main/docs/TOOLBOX_DEV.md)
 - [Power Platform Tool Box](https://github.com/PowerPlatformToolBox)
 - [Sample Tools](https://github.com/PowerPlatformToolBox/sample-tools)
 - [Yeoman](https://yeoman.io/)
