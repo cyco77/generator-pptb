@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "chalk": "^5.3.0",
+    "generator-pptb": "file:generator-pptb-1.0.2.tgz",
     "yeoman-generator": "^7.3.2",
     "yosay": "^3.0.0"
   },

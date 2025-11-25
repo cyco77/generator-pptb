@@ -37,12 +37,12 @@ Power Platform Tool Box (PPTB) is a framework for building custom tools that int
 
 ## Features
 
-- 🚀 **Quick scaffolding** - Generate a complete PPTB tool project in seconds
-- 🎨 **Multiple frameworks** - Choose from HTML/TypeScript, React, Vue, or Svelte
-- 📦 **TypeScript support** - Full TypeScript integration with type definitions
-- 🔥 **Modern tooling** - Vite for fast development (React, Vue, Svelte)
-- 🎯 **Best practices** - Based on official PPTB sample tools
-- 📝 **Pre-configured** - Includes tsconfig, build scripts, and development setup
+-   🚀 **Quick scaffolding** - Generate a complete PPTB tool project in seconds
+-   🎨 **Multiple frameworks** - Choose from HTML/TypeScript, React, Vue, or Svelte
+-   📦 **TypeScript support** - Full TypeScript integration with type definitions
+-   🔥 **Modern tooling** - Vite for fast development (React, Vue, Svelte)
+-   🎯 **Best practices** - Based on official PPTB sample tools
+-   📝 **Pre-configured** - Includes tsconfig, build scripts, and development setup
 
 ## Tool Types
 
@@ -54,10 +54,10 @@ A simple HTML-first architecture with TypeScript. Perfect for lightweight tools.
 
 **Features:**
 
-- Pure HTML, CSS, and TypeScript
-- Direct DOM manipulation
-- Minimal dependencies
-- Fast build times
+-   Pure HTML, CSS, and TypeScript
+-   Direct DOM manipulation
+-   Minimal dependencies
+-   Fast build times
 
 **Best for:** Simple tools, forms, data viewers
 
@@ -67,11 +67,11 @@ Modern React 18 application with TypeScript and Vite.
 
 **Features:**
 
-- React 18 with hooks
-- TypeScript support
-- Vite for fast HMR
-- Component-based architecture
-- Fluent 9 UI components
+-   React 18 with hooks
+-   TypeScript support
+-   Vite for fast HMR
+-   Component-based architecture
+-   Fluent 9 UI, Ant Design or Material UI components
 
 **Best for:** Complex UIs, interactive dashboards, data-driven applications
 
@@ -81,10 +81,10 @@ Vue 3 Composition API with TypeScript and Vite.
 
 **Features:**
 
-- Vue 3 with Composition API
-- TypeScript support
-- Vite for fast HMR
-- Reactive data binding
+-   Vue 3 with Composition API
+-   TypeScript support
+-   Vite for fast HMR
+-   Reactive data binding
 
 **Best for:** Progressive web apps, admin panels, forms
 
@@ -94,10 +94,10 @@ Svelte 5 with TypeScript and Vite.
 
 **Features:**
 
-- Svelte 5 with runes
-- TypeScript support
-- Vite for fast HMR
-- Compiled components (no runtime)
+-   Svelte 5 with runes
+-   TypeScript support
+-   Vite for fast HMR
+-   Compiled components (no runtime)
 
 **Best for:** Performance-critical apps, small bundle sizes
 
@@ -130,13 +130,13 @@ yo pptb my-tool --quick
 
 ### Command-Line Options
 
-- `--quick`, `-q` - Quick mode, use defaults
-- `--toolType`, `-t` - Tool type: `html`, `react`, `vue`, or `svelte`
-- `--toolDisplayName`, `-n` - Display name of the tool
-- `--toolId` - Identifier (package name) of the tool
-- `--toolDescription` - Description of the tool
-- `--pkgManager` - Package manager: `npm`, `yarn`, or `pnpm`
-- `--gitInit` - Initialize git repository (true/false)
+-   `--quick`, `-q` - Quick mode, use defaults
+-   `--toolType`, `-t` - Tool type: `html`, `react`, `vue`, or `svelte`
+-   `--toolDisplayName`, `-n` - Display name of the tool
+-   `--toolId` - Identifier (package name) of the tool
+-   `--toolDescription` - Description of the tool
+-   `--pkgManager` - Package manager: `npm`, `yarn`, or `pnpm`
+-   `--gitInit` - Initialize git repository (true/false)
 
 **Example:**
 
@@ -188,41 +188,41 @@ After generating your tool:
 
 1. **Install dependencies:**
 
-   ```bash
-   cd my-tool
-   npm install
-   ```
+    ```bash
+    cd my-tool
+    npm install
+    ```
 
 2. **Start development:**
 
-   ```bash
-   # For HTML/TypeScript
-   npm run watch
+    ```bash
+    # For HTML/TypeScript
+    npm run watch
 
-   # For React/Vue/Svelte
-   npm run dev
-   ```
+    # For React/Vue/Svelte
+    npm run dev
+    ```
 
 3. **Build for production:**
 
-   ```bash
-   npm run build
-   ```
+    ```bash
+    npm run build
+    ```
 
 4. **Finalize package for publishing:**
 
-   ```bash
-   npm run finalize-package
-   ```
+    ```bash
+    npm run finalize-package
+    ```
 
-   This creates an `npm-shrinkwrap.json` file that locks dependencies for security and ensures consistent installations.
+    This creates an `npm-shrinkwrap.json` file that locks dependencies for security and ensures consistent installations.
 
 5. **Test in PPTB:**
-   - Build your tool
-   - Run `npm run finalize-package` to generate shrinkwrap
-   - Deploy to npm
-   - Install it in PPTB using debug window
-   - Load and test from the Tool Box interface
+    - Build your tool
+    - Run `npm run finalize-package` to generate shrinkwrap
+    - Deploy to npm
+    - Install it in PPTB using debug window
+    - Load and test from the Tool Box interface
 
 ## PPTB API
 
@@ -239,9 +239,9 @@ https://github.com/PowerPlatformToolBox/sample-tools
 
 ## Requirements
 
-- Node.js >= 18.0.0
-- npm, yarn, or pnpm
-- Yeoman (yo)
+-   Node.js >= 18.0.0
+-   npm, yarn, or pnpm
+-   Yeoman (yo)
 
 ## Contributing
 
@@ -249,13 +249,13 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Links
 
-- [Power Platform Tool Box](https://github.com/PowerPlatformToolBox)
-- [Sample Tools](https://github.com/PowerPlatformToolBox/sample-tools)
-- [Yeoman](https://yeoman.io/)
+-   [Power Platform Tool Box](https://github.com/PowerPlatformToolBox)
+-   [Sample Tools](https://github.com/PowerPlatformToolBox/sample-tools)
+-   [Yeoman](https://yeoman.io/)
 
 ## Support
 
 For issues and questions:
 
-- Open an issue on [GitHub](https://github.com/PowerPlatformToolBox/generator-pptb/issues)
-- Check the [sample tools repository](https://github.com/PowerPlatformToolBox/sample-tools)
+-   Open an issue on [GitHub](https://github.com/PowerPlatformToolBox/generator-pptb/issues)
+-   Check the [sample tools repository](https://github.com/PowerPlatformToolBox/sample-tools)
